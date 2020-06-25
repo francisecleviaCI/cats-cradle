@@ -47,17 +47,15 @@ let result3 = challengeBanner(3);
 console.log(result3)
 
 
-//3.//
+//3.///How do we ask to identify every third character of the word?
 function everyThird(str){
-let i = 0;
-while (i < str.length-1){
-i = i + 2;
-
-    //How do we ask to identify every third character of the word?
-    
-    
+let i = 2;
+while (i < str.length){
     let specificChar = str[i]; 
     console.log(specificChar);
+i = i + 3;
+    
+    
 
 }
 }
@@ -67,7 +65,7 @@ everyThird('I am the alfalfa and the omelette');
 let result4 = challengeBanner(4);
 console.log(result4)
 
-//4.//How do I stop it after the four digits?
+//4.//It works, but doesn't stop after the four digits.
 function firstFourCharacters(str){
     let i = 3;
     while (i < str.length){
@@ -107,8 +105,9 @@ function printOutFirstIndexU(str){
     let i = 0;
     while (i < str.length){
     i = i + 1;
-    if (str[i] === 'u')
+    if (str[i] === 'u') break;
     console.log(i);
+    
 
 }
 }
