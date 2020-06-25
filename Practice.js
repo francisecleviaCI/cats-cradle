@@ -49,6 +49,7 @@ function printEveryThirdCharacter(str){
 }
 printEveryThirdCharacter('I am the alfalfa and the omelette.')
 
+//4.//
 function firstFourCharacters(str, start){
     let count = 0;
     let i = start;
@@ -65,3 +66,50 @@ function firstFourCharacters(str, start){
 }
 firstFourCharacters("Oh hi, I didn't see you there. Welcome", 4)
 firstFourCharacters("Oh hi, I didn't see you there. Welcome", 36)
+
+//5.//
+// console.log('hello'.indexOf('o'))
+function printOutU(str){
+    let i = 0;
+    while (i < str.length){
+        if(str[i] === 'u'){
+            console.log(i)
+        } //i is just the index number, str[i] is the character//
+    i = i + 1;
+    }
+}
+printOutU('You picked the wrong house, bub.')
+
+//6.//
+function firstIndexOfU(str){
+    let i = 0;
+    while (i < str.length){
+        if(str[i] === 'u'){
+            console.log(i)
+            return; //return stops the function entirely
+        }
+    i = i + 1;
+
+}
+}
+firstIndexOfU('You picked the wrong house, bub.')
+
+//7.//
+function firstIndexOfU2(str){
+    let found = false;
+    let i = 0;
+    while (i < str.length){
+        if(str[i] === 'u' && found === false){
+            console.log(i)
+            
+            found = true;
+        }
+    i = i + 1;
+}
+    if (found === false){
+        console.log(-1)
+    }
+
+}
+firstIndexOfU2('You picked the wrong house, bub.');
+firstIndexOfU2("I'm Canadian.")
