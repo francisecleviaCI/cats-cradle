@@ -58,7 +58,7 @@ i = i + 2;
     
     let specificChar = str[i]; 
     console.log(specificChar);
-    
+
 }
 }
 everyThird('I am the alfalfa and the omelette');
@@ -67,19 +67,19 @@ everyThird('I am the alfalfa and the omelette');
 let result4 = challengeBanner(4);
 console.log(result4)
 
-//4.//  //What is this question asking??
+//4.//How do I stop it after the four digits?
 function firstFourCharacters(str){
-    let i = 0;
+    let i = 3;
     while (i < str.length){
     i = i + 1;
 
   
     
-    let specificChar = str[i]; 
-    console.log(specificChar);
+let specificChar = str[i]; 
+console.log(specificChar + str[i+1], str[i+2], str[i+3]);
     
 }
-    }
+}
 
 firstFourCharacters("Oh hi, I didn't see you there. Welcome.");
 
@@ -118,12 +118,13 @@ printOutFirstIndexU("You picked the wrong house, bub.");
 let result7 = challengeBanner(7);
 console.log(result7)
 
-//7.//
+//7.//Got the -1 to print out, but not a single 2.
 function printOutIndexU(str){
     let i = 0;
     while (i < str.length){
     i = i + 1;
-    if (str[i] === 'u'){
+const phrase = 'u'
+if (str[i] === 'u'){
     console.log(i);
 } else if (str[i] !== 'u') {
     console.log(-1);
@@ -132,4 +133,4 @@ function printOutIndexU(str){
 
 }
 }
-printOutIndexU("You picked the wrong house, bub.");
+const phrase = printOutIndexU("I'm Canadian");
